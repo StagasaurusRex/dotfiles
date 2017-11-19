@@ -24,5 +24,6 @@ alias reload='vagrant reload --provision'
 alias fuck="sudo !!"
 
 alias g-="git checkout -"
+alias gc="gitmoji -c"
 
 fortune -as | cowsay
