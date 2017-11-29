@@ -111,6 +111,21 @@ defaults write com.apple.dock mru-spaces -bool false
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Show indicator lights for open applications in the dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Make Dock icon translucent on Hidden applications
+defaults write com.apple.Dock showhidden -bool YES 
+
+# Show 'Recent Applications' stack on dock
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
+
+# Show filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Don't install macOS updates automatically
+sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool false
+
 echo ""
 echo "Done."
 echo ""
