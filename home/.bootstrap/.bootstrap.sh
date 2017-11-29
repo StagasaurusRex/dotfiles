@@ -150,7 +150,7 @@ echo ""
 
 sudo gem install homesick
 homesick clone StagasaurusRex/dotfiles
-homesick symlink --quiet --force dotfiles
+homesick link --quiet --force dotfiles
 
 echo ""
 echo "Done."
