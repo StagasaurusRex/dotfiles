@@ -170,6 +170,19 @@ echo "Done."
 echo ""
 echo "---"
 
+# Git
+
+echo ""
+echo "Setting up git..."
+echo ""
+
+git config --global core.excludesfile ~/.gitignore
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
 # Dock
 
 echo ""
