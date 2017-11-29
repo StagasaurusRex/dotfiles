@@ -184,3 +184,20 @@ defaults write com.apple.dock persistent-apps -array
 /usr/local/bin/dockutil --add /Applications/Omnifocus.app
 /usr/local/bin/dockutil --add /Applications/Spotify.app
 /usr/local/bin/dockutil --add /Applications/iTerm.app
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
+echo ""
+echo "Restarting finder and dock"
+echo ""
+
+sudo killall Finder
+sudo killall Dock
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
