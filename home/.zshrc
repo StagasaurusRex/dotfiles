@@ -1,5 +1,6 @@
 export ZSH=/Users/staggs/.oh-my-zsh
-export EDITOR="/Applications/Visual Studio Code.app"
+export EDITOR="/usr/bin/vim"
+
 COMPLETION_WAITING_DOTS="false"
 . ~/.secrc
 
