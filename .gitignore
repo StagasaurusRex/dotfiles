@@ -1,2 +1,4 @@
-home/.ssh/known_hosts
 .secrc
+home/.ssh/*
+!home/.ssh/config
+
