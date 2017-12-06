@@ -126,6 +126,13 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Don't install macOS updates automatically
 sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool false
 
+# Don't display prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Enable Secure Keyboard Entry in Terminal.app
+# See: https://security.stackexchange.com/a/47786/8918
+defaults write com.apple.terminal SecureKeyboardEntry -bool true
+
 echo ""
 echo "Done."
 echo ""
