@@ -10,3 +10,5 @@
     user = stagasaurusrex
 [push]
 	default = current
+[core]
+	excludesfile = /Users/staggs/.gitignore
