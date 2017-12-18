@@ -53,6 +53,7 @@ cask "transmit"
 cask "ubersicht"
 cask "visual-studio-code"
 cask "vlc"
+cask "wavebox"
 mas "Bear", id: 1091189122
 mas "Divvy", id: 413857545
 mas "FileBot", id: 905384638
