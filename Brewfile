@@ -54,6 +54,7 @@ cask "ubersicht"
 cask "visual-studio-code"
 cask "vlc"
 cask "wavebox"
+cask "alfred"
 mas "Bear", id: 1091189122
 mas "Divvy", id: 413857545
 mas "FileBot", id: 905384638
@@ -62,5 +63,4 @@ mas "Pastebot", id: 1179623856
 mas "PiPifier", id: 1160374471
 mas "Quiver", id: 866773894
 mas "Xcode", id: 497799835
-mas "Alfred", id: 405843582
 mas "Jayson", id: 1189824719
