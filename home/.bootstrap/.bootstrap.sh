@@ -138,6 +138,19 @@ echo "Done."
 echo ""
 echo "---"
 
+# Set keyboard shortcuts
+echo ""
+echo "Setting keyboard shortcuts"
+echo ""
+echo "---"
+
+exec ./shortcuts.sh
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
 # SF Mono
 
 echo ""
