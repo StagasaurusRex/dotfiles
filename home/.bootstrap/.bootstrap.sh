@@ -133,6 +133,8 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # See: https://security.stackexchange.com/a/47786/8918
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
+# Enable AptX for bluetooth audio
+sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true 
 echo ""
 echo "Done."
 echo ""
