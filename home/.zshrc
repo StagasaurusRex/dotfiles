@@ -30,5 +30,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+unalias gm
+gm() {
+  git merge --no-ff "$1"
+}
 
 fortune -as 
