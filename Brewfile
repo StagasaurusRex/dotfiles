@@ -3,6 +3,7 @@ tap "caskroom/drivers"
 tap "homebrew/bundle"
 tap "homebrew/core"
 brew "carthage"
+brew "cloc"
 brew "cowsay"
 brew "docker"
 brew "dockutil"
@@ -14,10 +15,10 @@ brew "git"
 brew "readline"
 brew "mas"
 brew "ical-buddy"
-brew "lolcat"
 brew "lua"
 brew "neofetch"
 brew "node"
+brew "python"
 brew "ruby"
 brew "swiftlint"
 brew "thefuck"
@@ -45,6 +46,7 @@ cask "plex-media-player"
 cask "postman"
 cask "private-internet-access"
 cask "rescuetime"
+cask "sequel-pro"
 cask "slack"
 cask "spotify"
 cask "steam"
@@ -55,6 +57,9 @@ cask "visual-studio-code"
 cask "vlc"
 cask "wavebox"
 cask "alfred"
+cask "caffeine"
+cask "vagrant"
+cask "java"
 mas "Bear", id: 1091189122
 mas "Divvy", id: 413857545
 mas "FileBot", id: 905384638
@@ -64,3 +69,6 @@ mas "PiPifier", id: 1160374471
 mas "Quiver", id: 866773894
 mas "Xcode", id: 497799835
 mas "Jayson", id: 1189824719
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
