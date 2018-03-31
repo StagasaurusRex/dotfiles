@@ -207,11 +207,6 @@ echo "Done."
 echo ""
 echo "---"
 
-echo ""
-echo "Done."
-echo ""
-echo "---"
-
 # Dock
 
 echo ""
