@@ -1,5 +1,6 @@
 export ZSH=/Users/staggs/.oh-my-zsh
 export EDITOR="/usr/bin/vim"
+export PATH=~/bin:$PATH
 
 COMPLETION_WAITING_DOTS="false"
 . ~/.secrc
