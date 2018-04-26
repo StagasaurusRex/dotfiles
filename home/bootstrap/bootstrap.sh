@@ -153,6 +153,18 @@ echo "Done."
 echo ""
 echo "---"
 
+# Clone Shell Script Repo
+echo ""
+echo "Cloning Shell Script Github Repo"
+echo ""
+
+git clone git@github.com:StagasaurusRex/Shell-Scripts.git ~/bin/
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
 # SF Mono
 
 echo ""
