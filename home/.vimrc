@@ -14,7 +14,7 @@ let g:netrw_winsize=25
 
 augroup ProjectDrawrer
   autocmd!
-    autocmd VimEnter * :Vexplore
-    autocmd VimEnter * wincmd l 
+  autocmd VimEnter * :Vexplore
+  autocmd VimEnter * wincmd l 
 augroup END
 
