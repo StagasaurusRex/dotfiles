@@ -22,3 +22,6 @@ aug netrw_close
   au!
   au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
 aug END
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
