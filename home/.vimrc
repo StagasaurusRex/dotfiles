@@ -24,4 +24,5 @@ aug netrw_close
 aug END
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype markdown setlocal spell textwidth=80
 
