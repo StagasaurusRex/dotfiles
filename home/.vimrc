@@ -18,3 +18,7 @@ augroup ProjectDrawrer
   autocmd VimEnter * wincmd l 
 augroup END
 
+aug netrw_close
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw"|q|endif
+aug END
