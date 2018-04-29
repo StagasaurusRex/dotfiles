@@ -4,6 +4,7 @@ set splitbelow
 set splitright
 set wildmode=longest,list,full
 set wildmenu
+set autochdir
 
 syntax on
 
@@ -36,4 +37,4 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
-nmap <CR> o<Esc>
+nnoremap <CR> o<Esc>
