@@ -31,6 +31,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+v() {
+  nvim $1
+}
 unalias gm
 gm() {
   git merge --no-ff "$1"
