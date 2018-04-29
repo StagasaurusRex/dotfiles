@@ -2,6 +2,8 @@ set background=dark
 set number
 set splitbelow
 set splitright
+set wildmode=longest,list,full
+set wildmenu
 
 syntax on
 
