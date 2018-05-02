@@ -18,6 +18,8 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize=20
 
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 augroup ProjectDrawrer
   autocmd!
   autocmd VimEnter * :Vexplore
