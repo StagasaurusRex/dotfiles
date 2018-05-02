@@ -1,5 +1,5 @@
 export ZSH=/Users/staggs/.oh-my-zsh
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/local/bin/nvim"
 export PATH=~/bin:$PATH
 
 COMPLETION_WAITING_DOTS="false"
