@@ -1,6 +1,7 @@
 [user]
 	name = William Staggs
 	email = William@staggs.io
+	signingkey = F65EB50EA10636B2
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -12,3 +13,5 @@
 	default = current
 [core]
 	excludesfile = /Users/staggs/.gitignore
+[commit]
+	gpgsign = true
