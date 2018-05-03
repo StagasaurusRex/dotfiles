@@ -15,3 +15,5 @@
 	excludesfile = /Users/staggs/.gitignore
 [commit]
 	gpgsign = true
+[tag]
+	gpgsign = true
