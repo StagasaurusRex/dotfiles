@@ -17,12 +17,11 @@ mash    = {"alt", "ctrl", "cmd"}
 ctrlAlt = {"alt", "ctrl" }
 cmdAlt  = {"cmd", "alt"}
 
-function bindSwitchFocus(mods, keys)
-    for i=1, #keys do
-        hs.hotkey.bind(mods, keys[i], function()
-            switchFocus(i)
-        end)
-    end
+function bindSwitchFocus(mods)
+    hs.hotkey.bind(mods, "I", hs.window.filter.focusNorth)
+    hs.hotkey.bind(mods, "K", hs.window.filter.focusSouth)
+    hs.hotkey.bind(mods, "J", hs.window.filter.focusWest)
+    hs.hotkey.bind(mods, "L", hs.window.filter.focusEast)
 end
 
 function bindWindowSwap(mods, keys)
