@@ -408,7 +408,7 @@ function bindWindowPosition()
     end)
 end
 
-bindSwitchFocus(cmdAlt, {"U", "I", "O", "L", "K", "J"})
+bindSwitchFocus(cmdAlt)
 bindWindowSwap(mash,    {"U", "I", "O", "L", "K", "J"})
 bindWindowPosition()
 
