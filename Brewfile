@@ -1,7 +1,7 @@
-tap "caskroom/cask"
-tap "caskroom/drivers"
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 brew "carthage"
 brew "cloc"
 brew "cowsay"
@@ -12,6 +12,8 @@ brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-frei0r", "with-liba
 brew "fortune"
 brew "gdbm"
 brew "git"
+brew "gnupg"
+brew "homesick-completion"
 brew "readline"
 brew "mas"
 brew "neovim"
@@ -65,6 +67,8 @@ cask "alfred"
 cask "caffeine"
 cask "vagrant"
 cask "java"
+cask "homebrew/cask-fonts/font-meslo-nerd-font"
+cask "homebrew/cask-fonts/font-inconsolata-nerd-font"
 mas "Bear", id: 1091189122
 mas "Divvy", id: 413857545
 mas "FileBot", id: 905384638
