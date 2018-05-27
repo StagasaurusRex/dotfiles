@@ -206,6 +206,17 @@ echo "Done."
 echo ""
 echo "---"
 
+echo ""
+echo "Install gems..."
+echo ""
+
+sudo gem install colorls
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
 # Change Shell
 
 echo ""
