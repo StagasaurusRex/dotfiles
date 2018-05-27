@@ -31,6 +31,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias ls="colorls -lA --sd"
 
 v() {
   nvim $1
