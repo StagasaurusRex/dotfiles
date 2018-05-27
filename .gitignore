@@ -1,4 +1,3 @@
-.secrc
 home/.ssh/*
 !home/.ssh/config
 

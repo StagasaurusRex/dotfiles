@@ -3,8 +3,6 @@ export EDITOR="/usr/local/bin/nvim"
 export PATH=~/bin:$PATH
 
 COMPLETION_WAITING_DOTS="false"
-. ~/.secrc
-
 ZSH_THEME="gitster"
 
 plugins=(git osx brew git-extras vagrant common-aliases)
