@@ -10,6 +10,8 @@ alias reload='vagrant reload --provision'
 # Git
 alias g-="git checkout -"
 alias gc="gitmoji -c"
+unalias gm
+alias gm="git merge --no-ff "
 # Files
 alias ..="cd .."
 alias ...="cd ../.."
