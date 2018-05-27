@@ -16,5 +16,9 @@ unalias gm
 gm() {
   git merge --no-ff "$1"
 }
+compdef _staggs_git_branch_names gm
 
+_staggs_git_branch_names () {
+  compadd "${(@)${(f)$(git branch)}#??}"
+}
 fortune -as 
