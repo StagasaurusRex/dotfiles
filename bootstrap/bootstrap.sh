@@ -7,6 +7,8 @@ sudo -v
 while true; do sudo -n true; sleep 60; \
     kill -0 "$$" || exit; done 2>/dev/null &
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Software Update
 
 echo ""
@@ -51,7 +53,7 @@ echo ""
 echo "Installing Applications..."
 echo ""
 
-brew bundle
+brew bundle --file=$DIR/Brewfile
 brew prune
 brew cleanup
 
@@ -146,7 +148,7 @@ echo "Setting keyboard shortcuts"
 echo ""
 echo "---"
 
-exec ./shortcuts.sh
+exec $DIR/shortcuts.sh
 
 echo ""
 echo "Done."
