@@ -1,15 +1,27 @@
-export ZSH=/Users/staggs/.oh-my-zsh
 export EDITOR="/usr/local/bin/nvim"
 export PATH=~/bin:$PATH
 export LANG=en_US.UTF-8
 export ZSH_TMUX_AUTOSTART=true
 
-COMPLETION_WAITING_DOTS="false"
-ZSH_THEME="gitster"
-plugins=(git osx brew git-extras vagrant common-aliases)
+source /usr/local/share/antigen/antigen.zsh
 
-source $ZSH/oh-my-zsh.sh
-eval $(thefuck --alias)
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle git-extras
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle osx
+antigen bundle brew
+antigen bundle vagrant
+antigen bundle common-aliases
+antigen bundle tmux
+antigen bundle ansible
+
+antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
+
+antigen apply
+
+COMPLETION_WAITING_DOTS="false"
 
 . ~/.zsh_aliases
 
