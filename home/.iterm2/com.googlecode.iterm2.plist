@@ -36260,7 +36260,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.homesick/repos/dotfiles/home/iterm2_profile</string>
+	<string>~/.homesick/repos/dotfiles/home/.iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{720, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -36304,9 +36304,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 770 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>940 637 1018 447 0 0 2560 1418 </string>
+	<string>940 663 1018 447 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>139 224 1402 1130 0 0 2560 1418 </string>
+	<string>659 419 1192 844 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1654 458 570 501 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225</key>
@@ -37002,7 +37002,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/staggs/.homesick/repos/dotfiles/home/iterm2_profile</string>
+	<string>/Users/staggs/.homesick/repos/dotfiles/home/.iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -37014,7 +37014,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-29T03:33:28Z</date>
+	<date>2018-05-30T03:33:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
