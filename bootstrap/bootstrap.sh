@@ -232,6 +232,17 @@ echo "Done."
 echo ""
 echo "---"
 
+echo ""
+echo "Installing Oh-My-Tmux..."
+echo ""
+
+ln -s -f ~/.homesick/repos/dotfiles/home/.tmux.conf ~/.tmux.conf
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
 # Dock
 
 echo ""
