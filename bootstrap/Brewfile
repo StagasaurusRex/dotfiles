@@ -12,8 +12,8 @@ brew "fasd"
 brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-frei0r", "with-libass", "with-libvorbis", "with-libvpx", "with-opencore-amr", "with-openjpeg", "with-opus", "with-rtmpdump", "with-schroedinger", "with-sdl2", "with-speex", "with-theora", "with-tools"]
 brew "fortune"
 brew "gdbm"
-brew "git"
 brew "gnupg"
+brew "git", args: ["without-completion"]
 brew "homesick-completion"
 brew "readline"
 brew "mas"
