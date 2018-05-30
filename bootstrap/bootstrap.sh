@@ -137,6 +137,7 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
 # Enable AptX for bluetooth audio
 sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true 
+
 echo ""
 echo "Done."
 echo ""
@@ -149,6 +150,19 @@ echo ""
 echo "---"
 
 exec $DIR/shortcuts.sh
+
+echo ""
+echo "Done."
+echo ""
+echo "---"
+
+echo ""
+echo "Setting iterm2 preferences"
+echo ""
+echo "---"
+
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 echo ""
 echo "Done."
