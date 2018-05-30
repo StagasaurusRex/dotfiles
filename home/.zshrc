@@ -24,5 +24,6 @@ antigen apply
 COMPLETION_WAITING_DOTS="false"
 
 . ~/.zsh_aliases
+. ~/.secrc
 
 fortune -as 
