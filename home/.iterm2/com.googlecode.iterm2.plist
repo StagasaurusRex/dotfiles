@@ -37027,6 +37027,8 @@
 	<integer>0</integer>
 	<key>TerminalMargin</key>
 	<integer>20</integer>
+	<key>TerminalVMargin</key>
+	<integer>20</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>WordCharacters</key>
