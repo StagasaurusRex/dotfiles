@@ -267,5 +267,5 @@ set -g mouse on
 set -g status-position top
 
 unbind-key [
-bind-key ] next-window
-bind-key [ previous-window
+bind-key -n C-] next-window
+bind-key -n C-[ previous-window
