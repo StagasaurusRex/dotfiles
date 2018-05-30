@@ -265,3 +265,7 @@ set -g mouse on
 
 # move status line to top
 #set -g status-position top
+
+unbind-key [
+bind-key ] next-window
+bind-key [ previous-window
