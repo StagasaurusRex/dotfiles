@@ -17,3 +17,6 @@
 [hooks "confirm"]
 	match = FIXME
 	match = TODO
+[hooks]
+	confirm = todo
+	confirm = fixme
