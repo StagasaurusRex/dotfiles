@@ -9,7 +9,7 @@ alias provision='vagrant provision'
 alias reload='vagrant reload --provision'
 # Git
 alias g-="git checkout -"
-alias gc="gitmoji -c"
+alias gc="git commit"
 unalias gm
 alias gm="git merge --no-ff "
 # Files
