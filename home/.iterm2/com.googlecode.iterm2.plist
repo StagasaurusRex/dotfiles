@@ -36308,11 +36308,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 460 606 469 -1920 -30 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1238 208 928 394 -1920 -30 1920 1058 </string>
+	<string>-953 624 928 394 -1920 -30 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 444 592 584 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1807 216 680 637 -1920 -30 1920 1058 </string>
+	<string>-1494 124 680 637 -1920 -30 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1809 146 680 637 -1920 -30 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225</key>
@@ -36472,13 +36472,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.79607843137254897</real>
+				<real>0.685272216796875</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.74901960784313726</real>
+				<real>0.685272216796875</real>
 				<key>Red Component</key>
-				<real>0.91764705882352937</real>
+				<real>0.685272216796875</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -36505,13 +36505,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.063731555826961994</real>
+				<real>0.031372549019607843</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.063731555826961994</real>
+				<real>0.031372549019607843</real>
 				<key>Red Component</key>
-				<real>0.06451416015625</real>
+				<real>0.031372549019607843</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -36978,6 +36978,19 @@
 			<false/>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.0</real>
+				<key>Red Component</key>
+				<real>0.0</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -36995,7 +37008,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Use Tab Color</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1.0111892884036147</real>
 			<key>Visual Bell</key>
@@ -37070,7 +37083,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-19T20:20:51Z</date>
+	<date>2018-07-20T20:20:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
