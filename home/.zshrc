@@ -27,4 +27,5 @@ COMPLETION_WAITING_DOTS="false"
 . ~/.zsh_aliases
 . ~/.secrc
 
+echo ""
 fortune -as 
