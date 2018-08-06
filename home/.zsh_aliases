@@ -22,4 +22,13 @@ alias ls="colorls -lA --sd"
 alias v=nvim
 alias vim=nvim
 
+bru() {
+  local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
+  local main_command="${1}"
+  [[ "${main_command}" == 'cask' ]] && main_command="${2}"
+  brew ${@}
 
+  for command in "${dump_commands[@]}"; do
+    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.Brewfile-${HOST}" --force
+  done
+}
