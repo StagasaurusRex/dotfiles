@@ -2,6 +2,7 @@ export EDITOR="/usr/local/bin/nvim"
 export PATH=~/bin:$PATH
 export LANG=en_US.UTF-8
 export ZSH_TMUX_AUTOSTART=true
+export COMPLETION_WAITING_DOTS="false"
 
 source /usr/local/share/antigen/antigen.zsh
 
@@ -22,7 +23,6 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 
 antigen apply
 
-COMPLETION_WAITING_DOTS="false"
 
 . ~/.zsh_aliases
 . ~/.secrc
