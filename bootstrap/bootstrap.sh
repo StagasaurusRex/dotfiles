@@ -137,6 +137,9 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Enable AptX for bluetooth audio
 sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true 
 
+# Enable Full Screen Mode for iOS Simulator
+defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+
 echo ""
 echo "Done."
 echo ""
