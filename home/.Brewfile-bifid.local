@@ -8,6 +8,7 @@ brew "gdbm"
 brew "readline"
 brew "ansible"
 brew "antigen"
+brew "bat"
 brew "carthage"
 brew "composer"
 brew "coreutils"
@@ -43,6 +44,7 @@ brew "tmux"
 brew "trash"
 brew "wget"
 brew "xdotool"
+brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
 cask "aerial"
@@ -51,6 +53,7 @@ cask "appcleaner"
 cask "atom"
 cask "bartender"
 cask "caffeine"
+cask "calibre"
 cask "dash"
 cask "dashlane"
 cask "discord"
@@ -115,6 +118,7 @@ mas "Pastebot", id: 1179623856
 mas "PiPifier", id: 1160374471
 mas "Quiver", id: 866773894
 mas "Realm Browser", id: 1007457278
+mas "Reeder", id: 880001334
 mas "Ridill SQLIte", id: 1058773711
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
