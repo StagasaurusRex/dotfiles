@@ -21,6 +21,7 @@ alias ls="colorls -lA --sd"
 # Editors
 alias v=nvim
 alias vim=nvim
+alias x=exit
 
 bru() {
   local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
