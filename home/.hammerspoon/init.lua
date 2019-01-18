@@ -2,17 +2,6 @@
 xPadding = 5
 yPadding = 5
 
-topLeft      = 1
-topMiddle    = 2
-topRight     = 3
-bottomRight  = 4
-bottomMiddle = 5
-bottomLeft   = 6
-
-backWindowIds = {}
-windowIds     = {}
-timers        = {}
-
 mash    = {"alt", "ctrl", "cmd"}
 ctrlAlt = {"alt", "ctrl" }
 cmdAlt  = {"cmd", "alt"}
@@ -24,44 +13,9 @@ function bindSwitchFocus(mods)
     hs.hotkey.bind(mods, "L", hs.window.filter.focusEast)
 end
 
-function bindWindowSwap(mods, keys)
-    for i = 1, #keys do
-        hs.hotkey.bind(mods, keys[i], function() 
-            swapFocus(i)
-        end)
-    end
 end
 
-function switchFocus(position)
-    local id = windowIds[position]
-    if id ~= nil then
-        hs.window.get(id):focus()        
-    end
-end
-
-function swapFocus(position)
-    local id = backWindowIds[position]
-    if id ~= nil then
-        hs.window.get(id):focus()
-        local temp = windowIds[position]
-        windowIds[position] = backWindowIds[position]
-        backWindowIds[position] = temp
-    end
-end
-
-function recordWindowPosition(id, positions)
-    local timer = timers[id]
-    if (timer ~= nil) then
-        timer:stop()
-    end
-
-    timer = hs.timer.doAfter(1, function()
-        for i = 1, #positions do
-            backWindowIds[positions[i]] = windowIds[positions[i]]
-            windowIds[positions[i]] = id
-        end
     end)
-    timers[id] = timer
 end
 
 function bindWindowPosition() 
@@ -78,9 +32,6 @@ function bindWindowPosition()
         f.w = max.w / 2 - xPadding
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topLeft, bottomLeft})
     end)
 
     -- Right Half
@@ -95,9 +46,6 @@ function bindWindowPosition()
         f.w = max.w / 2
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topRight, bottomRight})
     end)
 
     -- Right Two Thirds
@@ -111,10 +59,7 @@ function bindWindowPosition()
         f.y = max.y
         f.w = max.w / 3 * 2
         f.h = max.h
-        win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topMiddle, topRight, bottomRight, bottomMiddle})    
+        win:setFrame(f)  
     end)
 
     -- Left Two Thirds
@@ -129,9 +74,6 @@ function bindWindowPosition()
         f.w = max.w / 3 * 2 - xPadding
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topMiddle, topLeft, bottomLeft, bottomMiddle})
     end)
 
     -- Left Third
@@ -147,9 +89,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - xPadding
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topLeft, bottomLeft})
     end)
 
     -- Middle Third
@@ -164,9 +103,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - 2 * xPadding
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topMiddle, bottomMiddle})
     end)
 
     -- Right Third
@@ -181,9 +117,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - xPadding
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topRight, bottomRight})
     end)
 
     -- Top Left Third
@@ -198,9 +131,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - xPadding
         f.h = max.h / 2 - yPadding
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topLeft})
     end)
 
     -- Bottom Left Third
@@ -215,9 +145,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - xPadding
         f.h = max.h / 2
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {bottomLeft})    
     end)
 
     -- Top Right Third
@@ -232,9 +159,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - xPadding
         f.h = max.h / 2 - yPadding
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topRight})    
     end)
 
     -- Bottom Right Third
@@ -248,10 +172,7 @@ function bindWindowPosition()
         f.y = max.y + max.h / 2 + yPadding
         f.w = max.w / 3 - xPadding
         f.h = max.h / 2
-        win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {bottomRight})            
+        win:setFrame(f)      
     end)
 
     -- Top Half
@@ -266,9 +187,6 @@ function bindWindowPosition()
     --     f.w = max.w
     --     f.h = max.h / 2 - yPadding
     --     win:setFrame(f)
-
-    --     local id = win:id()
-    --     recordWindowPosition(id, {topLeft, topMiddle, topRight})
     -- end)
 
     -- Top Middle
@@ -283,9 +201,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - 2 * xPadding
         f.h = max.h / 2 - yPadding
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topMiddle})
     end)
 
     -- Bottom Half
@@ -300,9 +215,6 @@ function bindWindowPosition()
     --     f.w = max.w
     --     f.h = max.h / 2
     --     win:setFrame(f)
-
-    --     local id = win:id()
-    --     recordWindowPosition(id, {bottomLeft, bottomMiddle, bottomRight})
     -- end)
 
     -- Bottom Middle
@@ -317,9 +229,6 @@ function bindWindowPosition()
         f.w = max.w / 3 - 2 * xPadding
         f.h = max.h / 2
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {bottomMiddle})
     end)
 
     -- Top Left Corner
@@ -334,9 +243,6 @@ function bindWindowPosition()
         f.w = max.w / 2 - xPadding
         f.h = max.h / 2 - yPadding
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topLeft})
     end)
 
     -- Bottom Left Corner
@@ -351,9 +257,6 @@ function bindWindowPosition()
         f.w = max.w / 2 - xPadding
         f.h = max.h / 2
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {bottomLeft})
     end)
 
     -- Top Right Corner
@@ -368,9 +271,6 @@ function bindWindowPosition()
         f.w = max.w / 2 - xPadding
         f.h = max.h / 2 - yPadding
         win:setFrame(f)
-
-        local id = win:id()    
-        recordWindowPosition(id, {topRight})
     end)
 
     -- Bottom Right Corner
@@ -385,9 +285,6 @@ function bindWindowPosition()
         f.w = max.w / 2 - xPadding
         f.h = max.h / 2
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {bottomRight})    
     end)
 
     -- Full Screen
@@ -402,14 +299,10 @@ function bindWindowPosition()
         f.w = max.w
         f.h = max.h
         win:setFrame(f)
-
-        local id = win:id()
-        recordWindowPosition(id, {topLeft,topMiddle,topRight,bottomLeft,bottomMiddle,bottomRight})
     end)
 end
 
 bindSwitchFocus(cmdAlt)
-bindWindowSwap(mash,    {"U", "I", "O", "L", "K", "J"})
 bindWindowPosition()
 
 -- Paste clipboard contents
