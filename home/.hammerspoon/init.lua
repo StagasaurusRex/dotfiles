@@ -13,6 +13,10 @@ function bindSwitchFocus(mods)
     hs.hotkey.bind(mods, "L", hs.window.filter.focusEast)
 end
 
+function bindSendToBack(mods)
+    hs.hotkey.bind(mods, "O", function()
+        hs.window.focusedWindow():sendToBack()
+    end)
 end
 
 function bindSwitchMonitor(mods)
@@ -314,6 +318,8 @@ function bindWindowPosition()
     end)
 end
 
+
+bindSendToBack(cmdAlt)
 bindSwitchFocus(cmdAlt)
 bindSwitchMonitor(mash)
 bindWindowPosition()
