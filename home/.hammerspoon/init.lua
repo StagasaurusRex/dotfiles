@@ -15,6 +15,18 @@ end
 
 end
 
+function bindSwitchMonitor(mods)
+    hs.hotkey.bind(mods, "I", function()
+        hs.window.focusedWindow():moveOneScreenNorth()
+    end)
+    hs.hotkey.bind(mods, "K", function()
+        hs.window.focusedWindow():moveOneScreenSouth()
+    end)
+    hs.hotkey.bind(mods, "J", function() 
+        hs.window.focusedWindow():moveOneScreenWest()
+    end)
+    hs.hotkey.bind(mods, "L", function()
+        hs.window.focusedWindow():moveOneScreenEast()
     end)
 end
 
@@ -303,6 +315,7 @@ function bindWindowPosition()
 end
 
 bindSwitchFocus(cmdAlt)
+bindSwitchMonitor(mash)
 bindWindowPosition()
 
 -- Paste clipboard contents
