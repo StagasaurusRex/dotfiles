@@ -26,7 +26,6 @@ antigen apply
 
 
 . ~/.zsh_aliases
-. ~/.secrc
 
 echo ""
 fortune -as 
