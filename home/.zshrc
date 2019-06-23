@@ -3,6 +3,7 @@ export PATH=~/bin:$PATH
 export LANG=en_US.UTF-8
 export ZSH_TMUX_AUTOSTART=true
 export COMPLETION_WAITING_DOTS="false"
+export ZSH="/Users/staggs/.oh-my-zsh"
 
 source /usr/local/share/antigen/antigen.zsh
 
