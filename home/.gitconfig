@@ -13,7 +13,6 @@
 	default = current
 [core]
 	excludesfile = /Users/staggs/.gitignore
-	hooksPath = /Users/staggs/.git-hooks
 [hooks "confirm"]
 	match = FIXME
 	match = TODO
