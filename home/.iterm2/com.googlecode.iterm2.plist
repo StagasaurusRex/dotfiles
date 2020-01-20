@@ -36305,11 +36305,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 498 620 392 0 0 1920 1057 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>545 344 1018 447 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>32 337 680 653 0 0 1920 1057 </string>
+	<string>151 227 680 639 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225_selection</key>
@@ -37005,7 +37005,7 @@
 			<key>Use Tab Color</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.0111892884036147</real>
+			<real>1.01</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -37016,22 +37016,24 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.2</string>
 		<string>3.2.9</string>
+		<string>3.3.1</string>
 		<string>3.3.0</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{907, 796}</string>
+		<string>{475, 773}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>54CB134D-3157-49C3-B40B-108929EE8A61</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>11</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586827580.22903705</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -37380,6 +37382,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.termid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -37453,6 +37463,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.commandLine</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>number</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -37722,6 +37740,8 @@
 	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>582847157.15865195</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
@@ -37763,6 +37783,8 @@
 	<string>~/.iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -37772,11 +37794,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-08T19:44:18Z</date>
+	<date>2019-09-02T14:59:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -37804,7 +37826,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.0</string>
+	<string>3.3.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
