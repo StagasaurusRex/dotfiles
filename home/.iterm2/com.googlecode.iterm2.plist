@@ -36309,7 +36309,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>545 344 1018 447 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>151 227 680 639 0 0 1920 1057 </string>
+	<string>709 0 976 1027 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A12E4C15-0687-4F95-81C8-30AE2B151225_selection</key>
@@ -36969,8 +36969,22 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Status Bar</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
+			<key>Status Bar Layout</key>
+			<dict>
+				<key>advanced configuration</key>
+				<dict>
+					<key>algorithm</key>
+					<integer>0</integer>
+					<key>font</key>
+					<string>.AppleSystemUIFont 12</string>
+				</dict>
+				<key>components</key>
+				<array/>
+			</dict>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tab Color</key>
@@ -37016,24 +37030,38 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
-		<string>3.2.9</string>
+		<string>3.3.6</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
+		<string>3.3.3</string>
+		<string>3.3.5</string>
+		<string>3.3.7</string>
+		<string>3.2.9</string>
+		<string>3.3.2</string>
 		<string>3.3.0</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>SF Mono</string>
+		<string>MesloLGL Nerd Font</string>
+	</array>
+	<key>NoSyncConfirmRunOpenFile</key>
+	<true/>
+	<key>NoSyncConfirmRunOpenFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{1920, 30}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{475, 773}</string>
+		<string>{2105, 894}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>54CB134D-3157-49C3-B40B-108929EE8A61</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>44</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586827580.22903705</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -37543,9 +37571,25 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -37738,6 +37782,12 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>twig</string>
+		<string>inverted</string>
+		<string>yarn add lottie-ios@3.0.3 </string>
+	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>582847157.15865195</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -37794,7 +37844,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-02T14:59:44Z</date>
+	<date>2020-01-28T16:20:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -37826,7 +37876,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.2</string>
+	<string>3.3.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
