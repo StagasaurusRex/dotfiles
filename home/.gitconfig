@@ -11,6 +11,7 @@
 	user = stagasaurusrex
 [push]
 	default = current
+	followTags = true
 [core]
 	excludesfile = /Users/staggs/.gitignore
 [hooks "confirm"]
