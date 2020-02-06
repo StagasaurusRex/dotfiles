@@ -151,7 +151,7 @@ echo "Setting keyboard shortcuts"
 echo ""
 echo "---"
 
-exec $DIR/shortcuts.sh
+$DIR/shortcuts.sh
 
 echo ""
 echo "Done."
