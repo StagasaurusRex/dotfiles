@@ -70,8 +70,6 @@ echo ""
 # Disable Gatekeeper
 sudo spctl --master-disable
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
