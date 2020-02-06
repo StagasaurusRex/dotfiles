@@ -227,7 +227,7 @@ echo "Install Homesick and dotfiles..."
 echo ""
 
 sudo gem install homesick
-homesick clone StagasaurusRex/dotfiles
+homesick clone git@github.com:StagasaurusRex/dotfiles.git
 homesick link --quiet --force dotfiles
 
 echo ""
