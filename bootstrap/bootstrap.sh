@@ -235,19 +235,6 @@ echo "Done."
 echo ""
 echo "---"
 
-# Change Shell
-
-echo ""
-echo "Changing default shell..."
-echo ""
-
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-
-echo ""
-echo "Done."
-echo ""
-echo "---"
-
 echo ""
 echo "Installing Oh-My-Tmux..."
 echo ""
