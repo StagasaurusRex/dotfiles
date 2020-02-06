@@ -54,7 +54,6 @@ echo "Installing Applications..."
 echo ""
 
 brew bundle --file=$DIR/Brewfile
-brew prune
 brew cleanup
 
 echo ""
