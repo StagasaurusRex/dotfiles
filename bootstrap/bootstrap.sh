@@ -168,6 +168,20 @@ echo "Done."
 echo ""
 echo "---"
 
+echo ""
+echo "Make personal ssh key"
+echo ""
+
+SSH_FILE=~/.ssh/id_rsa
+
+if [ ! -f $SSH_FILE ]; then
+    ssh-keygen -t rsa -b 4096 -C "William@Staggs.io" -f $SSH_FILE -q -N ""
+    eval "$(ssh-agent -s)"
+    ssh-add -K ~/.ssh/id_rsa
+    pbcopy < ~/.ssh/id_rsa.pub
+    read -p "Ssh public key copied to clipboard. Press enter once you have added it to github."
+fi
+
 # Clone Shell Script Repo
 echo ""
 echo "Cloning Shell Script Github Repo"
