@@ -29,7 +29,7 @@ echo "Installing Xcode developer tools..."
 echo ""
 
 xcode-select --install
-sudo xcodebuild -license accept
+xcodebuild -license accept
 
 echo ""
 echo "Done."
