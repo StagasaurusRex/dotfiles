@@ -86,7 +86,6 @@ cask "vlc"
 mas "Amphetamine", id: 937984704
 mas "ColorSlurp", id: 1287239339
 mas "FileBot.launcher", id: 905384638
-mas "Jayson", id: 1189824719
 mas "OmniFocus", id: 1346203938
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
