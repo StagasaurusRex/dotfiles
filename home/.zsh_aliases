@@ -23,13 +23,13 @@ alias v=nvim
 alias vim=nvim
 alias x=exit
 
-bru() {
+brew() {
   local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
   local main_command="${1}"
   [[ "${main_command}" == 'cask' ]] && main_command="${2}"
-  brew ${@}
+  /usr/local/bin/brew ${@}
 
   for command in "${dump_commands[@]}"; do
-    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/Brewfile-${HOST}" --force
+    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.homesick/repos/dotfiles/bootstrap/Brewfile-$(scutil --get LocalHostName)" --force
   done
 }
