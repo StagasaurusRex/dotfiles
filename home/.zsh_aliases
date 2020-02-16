@@ -30,6 +30,6 @@ bru() {
   brew ${@}
 
   for command in "${dump_commands[@]}"; do
-    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.Brewfile-${HOST}" --force
+    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/Brewfile-${HOST}" --force
   done
 }
