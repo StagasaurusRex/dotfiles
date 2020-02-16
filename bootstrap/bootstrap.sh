@@ -53,8 +53,12 @@ echo ""
 echo "Installing Applications..."
 echo ""
 
-brew bundle --file=$DIR/Brewfile
-brew cleanup
+select BREWFILE in $DIR/Brewfile*;
+do
+  brew bundle --file=$BREWFILE
+  brew cleanup
+  break
+done
 
 echo ""
 echo "Done."
