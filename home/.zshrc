@@ -35,5 +35,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -r rubygems -e 'puts Gem.dir')/bin:$PATH"
+fi
