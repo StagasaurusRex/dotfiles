@@ -35,12 +35,13 @@ brew "neovim"
 brew "node@10"
 brew "pkg-config"
 brew "ruby"
-brew "swiftlint"
+brew "terminal-notifier"
 brew "thefuck"
 brew "tig"
 brew "tmux"
 brew "trash"
 brew "wget"
+brew "yarn"
 brew "zlib"
 brew "zsh"
 brew "zsh-completions"
@@ -83,9 +84,15 @@ cask "ubersicht"
 cask "vagrant"
 cask "visual-studio-code"
 cask "vlc"
+cask "vmware-fusion"
 mas "Amphetamine", id: 937984704
+mas "Bear", id: 1091189122
 mas "ColorSlurp", id: 1287239339
 mas "FileBot.launcher", id: 905384638
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
 mas "OmniFocus", id: 1346203938
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
