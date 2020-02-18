@@ -40,6 +40,7 @@ brew "thefuck"
 brew "tig"
 brew "tmux"
 brew "trash"
+brew "watchman"
 brew "wget"
 brew "yarn"
 brew "zlib"
@@ -91,6 +92,7 @@ mas "ColorSlurp", id: 1287239339
 mas "FileBot.launcher", id: 905384638
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Jayson", id: 1468691718
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "OmniFocus", id: 1346203938
