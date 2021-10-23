@@ -21,7 +21,6 @@ antigen bundle git-extras
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle osx
 antigen bundle brew
-antigen bundle vagrant
 antigen bundle common-aliases
 antigen bundle tmux
 antigen bundle ansible
