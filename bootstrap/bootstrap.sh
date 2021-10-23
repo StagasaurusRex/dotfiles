@@ -270,13 +270,6 @@ echo ""
 # Wipe all (default) app icons from the Dock
 defaults write com.apple.dock persistent-apps -array
 
-# Add icons back to dock
-/usr/local/bin/dockutil --add /Applications/Safari.app
-/usr/local/bin/dockutil --add /Applications/Bear.app
-/usr/local/bin/dockutil --add /Applications/Omnifocus.app
-/usr/local/bin/dockutil --add /Applications/Spotify.app
-/usr/local/bin/dockutil --add /Applications/iTerm.app
-
 #Set dock size
 defaults write com.apple.dock tilesize -int 32
 
