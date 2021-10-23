@@ -4,13 +4,6 @@ export LANG=en_US.UTF-8
 export ZSH_TMUX_AUTOSTART=true
 export COMPLETION_WAITING_DOTS="false"
 export ZSH="/Users/staggs/.oh-my-zsh"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH=$PATH:$ANDROID_HOME
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export NODE_ARGS='--max_old_space_size=2048'
 
 source /usr/local/share/antigen/antigen.zsh
 
@@ -30,12 +23,12 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 
 antigen apply
 
-ssh-add -K ~/.ssh/wol-admin &> /dev/null
-
 . ~/.zsh_aliases
 
 echo ""
 fortune -as 
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+LOCALZSHRC=~/.zshrc-$(scutil --get LocalHostName)
+if test -f "$LOCALZSHRC"; then
+	. "$LOCALZSHRC"
+fi
