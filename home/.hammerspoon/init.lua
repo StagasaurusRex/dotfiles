@@ -39,7 +39,6 @@ function bindWindowPosition()
     hs.hotkey.bind(ctrlAlt, "J", function()
         local win = hs.window.focusedWindow()
         local f = win:frame()
-        local oldFrame = win:frame()
         local screen = win:screen()
         local max = screen:frame()
 
@@ -95,7 +94,6 @@ function bindWindowPosition()
     -- Left Third
     hs.hotkey.bind(ctrlAlt, "7", function()
         local win = hs.window.focusedWindow()
-
         local f = win:frame()
         local screen = win:screen()
         local max = screen:frame()
