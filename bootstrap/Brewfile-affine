@@ -1,10 +1,15 @@
+tap "adoptopenjdk/openjdk"
+tap "exolnet/deprecated"
 tap "facebook/fb"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "minio/stable"
+tap "nakabonne/ali"
+tap "xen0l/taps"
 brew "gdbm"
 brew "readline"
 brew "ansible"
@@ -14,16 +19,19 @@ brew "autoconf"
 brew "automake"
 brew "awscli"
 brew "glib"
+brew "pkg-config"
+brew "cairo"
 brew "carthage"
 brew "cfssl"
 brew "cloc"
+brew "composer"
 brew "coreutils"
 brew "cowsay"
-brew "docker"
+brew "docker", link: false
 brew "dockutil"
 brew "fasd"
-brew "pkg-config"
 brew "gnutls"
+brew "harfbuzz"
 brew "ffmpeg"
 brew "fortune"
 brew "git"
@@ -32,14 +40,18 @@ brew "gnupg", link: false
 brew "grpc"
 brew "homesick-completion"
 brew "ical-buddy"
+brew "libheif"
+brew "python@3.8"
 brew "imagemagick"
 brew "less"
 brew "lua"
 brew "mas"
 brew "neofetch"
 brew "neovim"
+brew "node"
 brew "node@10"
-brew "openjdk@11"
+brew "php"
+brew "php@7.2"
 brew "ruby"
 brew "terminal-notifier"
 brew "terraform"
@@ -48,25 +60,36 @@ brew "thefuck"
 brew "tig"
 brew "tmux"
 brew "trash"
+brew "vault"
 brew "watchman"
 brew "wget"
 brew "yarn"
+brew "youtube-dl"
 brew "zlib"
 brew "zsh"
 brew "zsh-completions"
 brew "facebook/fb/idb-companion"
+brew "hashicorp/tap/packer"
+brew "nakabonne/ali/ali"
+brew "xen0l/taps/aws-gate"
 cask "adoptopenjdk8"
 cask "aerial"
 cask "alfred"
+cask "amazon-chime"
 cask "android-platform-tools"
 cask "appcleaner"
 cask "aws-vault"
 cask "bartender"
+cask "bettertouchtool"
 cask "boom-3d"
+cask "brave-browser"
+cask "calibre"
 cask "cheatsheet"
+cask "devonthink"
 cask "discord"
 cask "disk-inventory-x"
-cask "fantastical"
+cask "docker"
+cask "figma"
 cask "firefox"
 cask "flipper"
 cask "font-inconsolata-nerd-font"
@@ -75,8 +98,11 @@ cask "font-office-code-pro"
 cask "gfxcardstatus"
 cask "gitup"
 cask "google-chrome"
+cask "google-drive"
 cask "google-drive-file-stream"
 cask "gpg-suite"
+cask "graphiql"
+cask "graphql-ide"
 cask "hammerspoon"
 cask "handbrake"
 cask "imageoptim"
@@ -84,15 +110,23 @@ cask "iterm2"
 cask "jdownloader"
 cask "jetbrains-toolbox"
 cask "keepassxc"
+cask "keka"
+cask "keyboard-maestro"
 cask "macmediakeyforwarder"
+cask "microsoft-teams"
+cask "notion"
 cask "obsidian"
 cask "plex"
 cask "postman"
+cask "quitter"
+cask "qview"
 cask "react-native-debugger"
 cask "reactotron"
 cask "rescuetime"
 cask "sequel-pro"
 cask "session-manager-plugin"
+cask "sketch"
+cask "sketchpacks"
 cask "slack"
 cask "spotify"
 cask "steam"
@@ -100,18 +134,31 @@ cask "the-unarchiver"
 cask "transmit"
 cask "ubersicht"
 cask "vagrant"
-cask "vagrant-vmware-utility"
 cask "visual-studio-code"
 cask "vlc"
 cask "vmware-fusion"
+cask "wwdc"
+cask "xee"
+cask "xnviewmp"
+mas "1Password 7", id: 1333542190
+mas "Affinity Designer", id: 824171161
+mas "Affinity Photo", id: 824183456
+mas "Affinity Publisher", id: 881418622
 mas "Amphetamine", id: 937984704
+mas "ApolloOne", id: 1044484672
 mas "Bear", id: 1091189122
+mas "Boop", id: 1518425043
 mas "ColorSlurp", id: 1287239339
+mas "Craft", id: 1487937127
+mas "Dashlane - Legacy", id: 552383089
+mas "Deliveries", id: 290986013
 mas "Developer", id: 640199958
+mas "Donate and Smile", id: 1446974193
 mas "Drafts", id: 1435957248
 mas "FileBot", id: 905384638
 mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
+mas "Honey", id: 1472777122
 mas "iMovie", id: 408981434
 mas "Jayson", id: 1468691718
 mas "Keynote", id: 409183694
@@ -122,5 +169,9 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pastebot", id: 1179623856
 mas "PiPifier", id: 1160374471
 mas "Quiver", id: 866773894
+mas "Sequel Ace", id: 1518036000
+mas "Soulver 3", id: 1508732804
+mas "Spaces", id: 1509611686
+mas "Timery", id: 1425368544
 mas "ToothFairy", id: 1191449274
 mas "Xcode", id: 497799835
