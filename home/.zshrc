@@ -25,7 +25,6 @@ antigen bundle vagrant
 antigen bundle common-aliases
 antigen bundle tmux
 antigen bundle ansible
-antigen bundle marzocchi/zsh-notify
 antigen bundle wd
 
 antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
