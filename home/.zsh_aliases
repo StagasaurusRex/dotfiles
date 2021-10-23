@@ -1,12 +1,6 @@
 # macOS
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
-# WorkOutLoud
-alias wol='cd ~/Developer/workoutloud/WOL-Dev-alpha;'
-# Vagrant
-alias up='vagrant up --provision --provider vmware_fusion'
-alias provision='vagrant provision'
-alias reload='vagrant reload --provision'
 # Git
 alias g-="git checkout -"
 alias gc="git commit"
