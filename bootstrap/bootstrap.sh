@@ -211,19 +211,6 @@ echo "Done."
 echo ""
 echo "---"
 
-# Gimoji Command Line
-
-echo ""
-echo "Installing Gitmoji-Cli..."
-echo ""
-
-npm i -g gitmoji-cli
-
-echo ""
-echo "Done."
-echo ""
-echo "---"
-
 # Homesick
 
 echo ""
