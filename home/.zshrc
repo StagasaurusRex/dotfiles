@@ -31,6 +31,7 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 
 antigen apply
 
+ssh-add -K ~/.ssh/wol-admin &> /dev/null
 
 . ~/.zsh_aliases
 
