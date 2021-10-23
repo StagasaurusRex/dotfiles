@@ -53,8 +53,12 @@ echo ""
 echo "Installing Applications..."
 echo ""
 
-select BREWFILE in $DIR/Brewfile*;
+select BREWFILE in $DIR/Brewfile* Skip;
 do
+  if [ "$BREWFILE" = "Skip" ]; then
+    echo "Skipping"
+    break
+  fi
   brew bundle --file=$BREWFILE
   brew cleanup
   break
