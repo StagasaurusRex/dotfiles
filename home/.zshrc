@@ -31,7 +31,7 @@ antigen apply
 . ~/.zsh_aliases
 
 echo ""
-fortune -as 
+fortune 
 
 LOCALZSHRC=~/.zshrc-$(scutil --get LocalHostName)
 if test -f "$LOCALZSHRC"; then
