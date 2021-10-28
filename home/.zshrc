@@ -1,4 +1,3 @@
-export EDITOR="/usr/local/bin/nvim"
 export PATH=~/bin:$PATH
 export LANG=en_US.UTF-8
 export ZSH_TMUX_AUTOSTART=true
