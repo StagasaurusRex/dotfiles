@@ -22,7 +22,12 @@ brew() {
   local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
   local main_command="${1}"
   [[ "${main_command}" == 'cask' ]] && main_command="${2}"
-  /usr/local/bin/brew ${@}
+  arch_name="$(uname -m)"
+  if [ "${arch_name}" = "arm64" ]; then
+      /opt/homebrew/bin/brew ${@}
+  else
+     /usr/local/bin/brew ${@}
+  fi
 
   for command in "${dump_commands[@]}"; do
     [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.homesick/repos/dotfiles/bootstrap/Brewfile-$(scutil --get LocalHostName)" --force

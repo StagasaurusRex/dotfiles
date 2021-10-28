@@ -5,7 +5,13 @@ export ZSH_TMUX_AUTOSTART=true
 export COMPLETION_WAITING_DOTS="false"
 export ZSH="/Users/staggs/.oh-my-zsh"
 
-source /usr/local/share/antigen/antigen.zsh
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "arm64" ]; then
+    source /opt/homebrew/share/antigen/antigen.zsh
+else
+    source /usr/local/share/antigen/antigen.zsh
+fi
 
 antigen use oh-my-zsh
 
