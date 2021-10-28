@@ -1,0 +1,75 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+brew "antigen"
+brew "coreutils"
+brew "cowsay"
+brew "docker", link: false
+brew "dockutil"
+brew "fortune"
+brew "git"
+brew "git-quick-stats"
+brew "homesick-completion"
+brew "less"
+brew "lua"
+brew "mas"
+brew "neovim"
+brew "tmux"
+brew "trash"
+brew "wget"
+brew "youtube-dl"
+brew "zsh"
+brew "zsh-completions"
+cask "aerial"
+cask "alfred"
+cask "appcleaner"
+cask "aws-vault"
+cask "bartender"
+cask "boom-3d"
+cask "brave-browser"
+cask "cheatsheet"
+cask "devonthink"
+cask "discord"
+cask "disk-inventory-x"
+cask "docker"
+cask "font-inconsolata-nerd-font"
+cask "font-meslo-lg-nerd-font"
+cask "font-office-code-pro"
+cask "gitup"
+cask "hammerspoon"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "macmediakeyforwarder"
+cask "mimestream"
+cask "obsidian"
+cask "postman"
+cask "quitter"
+cask "spotify"
+cask "steam"
+cask "the-unarchiver"
+cask "transmit"
+cask "visual-studio-code"
+cask "vlc"
+cask "wwdc"
+mas "1Password 7", id: 1333542190
+mas "Affinity Designer", id: 824171161
+mas "Affinity Photo", id: 824183456
+mas "Affinity Publisher", id: 881418622
+mas "Amphetamine", id: 937984704
+mas "Boop", id: 1518425043
+mas "ColorSlurp", id: 1287239339
+mas "Deliveries", id: 290986013
+mas "Developer", id: 640199958
+mas "Donate and Smile", id: 1446974193
+mas "Drafts", id: 1435957248
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "OmniFocus", id: 1346203938
+mas "Pages", id: 409201541
+mas "Paprika Recipe Manager 3", id: 1303222628
+mas "Pastebot", id: 1179623856
+mas "PiPifier", id: 1160374471
