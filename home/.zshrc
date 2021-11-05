@@ -29,6 +29,7 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 antigen apply
 
 . ~/.zsh_aliases
+. /usr/local/etc/profile.d/z.sh
 
 echo ""
 fortune 

@@ -65,6 +65,7 @@ brew "watchman"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
+brew "z"
 brew "zlib"
 brew "zsh"
 brew "zsh-completions"
@@ -174,5 +175,6 @@ mas "Sequel Ace", id: 1518036000
 mas "Soulver 3", id: 1508732804
 mas "Spaces", id: 1509611686
 mas "Timery", id: 1425368544
+mas "Toolkit for YNAB", id: 1592912837
 mas "ToothFairy", id: 1191449274
 mas "Xcode", id: 497799835
