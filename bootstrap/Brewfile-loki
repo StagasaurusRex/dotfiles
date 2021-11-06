@@ -12,14 +12,17 @@ brew "fortune"
 brew "git"
 brew "git-quick-stats"
 brew "homesick-completion"
+brew "imagemagick"
 brew "less"
 brew "lua"
 brew "mas"
 brew "neovim"
+brew "rbenv"
 brew "tmux"
 brew "trash"
 brew "wget"
 brew "youtube-dl"
+brew "z"
 brew "zsh"
 brew "zsh-completions"
 cask "aerial"
@@ -46,7 +49,10 @@ cask "macmediakeyforwarder"
 cask "mimestream"
 cask "obsidian"
 cask "postman"
+cask "proxyman"
 cask "quitter"
+cask "qview"
+cask "sf-symbols"
 cask "spotify"
 cask "steam"
 cask "the-unarchiver"
@@ -72,6 +78,8 @@ mas "Numbers", id: 409203825
 mas "OmniFocus", id: 1346203938
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
+mas "Parcel", id: 639968404
 mas "Pastebot", id: 1179623856
 mas "PiPifier", id: 1160374471
+mas "Toolkit for YNAB", id: 1592912837
 mas "Xcode", id: 497799835
