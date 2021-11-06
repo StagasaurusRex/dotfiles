@@ -22,7 +22,6 @@ antigen bundle brew
 antigen bundle common-aliases
 antigen bundle tmux
 antigen bundle ansible
-antigen bundle wd
 
 antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
 
