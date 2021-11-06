@@ -1,1 +1,2 @@
 eval "$(rbenv init - zsh)"
+ . /opt/homebrew/etc/profile.d/z.sh
