@@ -17,12 +17,15 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle git-extras
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
 antigen bundle osx
 antigen bundle brew
 antigen bundle common-aliases
 antigen bundle tmux
 antigen bundle ansible
+antigen bundle paulirish/git-open
 antigen bundle z
+antigen bundle "MichaelAquilina/zsh-you-should-use"
 
 antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
 
