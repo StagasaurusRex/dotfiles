@@ -32,6 +32,7 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 antigen apply
 
 . ~/.zsh_aliases
+eval "$(op completion zsh)"; compdef _op op
 
 echo ""
 fortune 
