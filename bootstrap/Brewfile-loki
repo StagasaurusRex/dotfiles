@@ -11,6 +11,7 @@ brew "ansible"
 brew "antigen"
 brew "ruby"
 brew "cocoapods"
+brew "composer"
 brew "coreutils"
 brew "cowsay"
 brew "docker", link: false
