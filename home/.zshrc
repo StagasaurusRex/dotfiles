@@ -46,3 +46,4 @@ fi
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
+[ -d /Volumes/Symplany/atlas-app/ops/docker/dev/bin ] && PATH="/Volumes/Symplany/atlas-app/ops/docker/dev/bin:$PATH" #Symplany Managed
