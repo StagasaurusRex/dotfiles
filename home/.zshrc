@@ -32,7 +32,7 @@ antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitst
 
 antigen apply
 
-. ~/.zsh_aliases
+source ~/.zsh_aliases
 eval "$(op completion zsh)"; compdef _op op
 
 echo ""
@@ -40,5 +40,5 @@ fortune
 
 LOCALZSHRC=~/.zshrc-$(scutil --get LocalHostName)
 if test -f "$LOCALZSHRC"; then
-	. "$LOCALZSHRC"
+	source "$LOCALZSHRC"
 fi
