@@ -23,3 +23,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
 nnoremap <CR> o<Esc>
+
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
