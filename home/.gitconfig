@@ -1,7 +1,7 @@
 [user]
 	name = William Staggs
 	email = William@staggs.io
-	signingkey = F65EB50EA10636B2
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDeKlkX5/oA5pH88MDZEWSH4tyEUYytnr+F03BLGX49Q
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -26,3 +26,12 @@
 	ff = only
 [init]
 	defaultBranch = main
+[merge]
+	ff = no
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
