@@ -18,6 +18,8 @@ alias ggwip="gunwip && gwip"
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
+alias cat="bat"
+alias rewip="gunwip && gwip"
 
 brew() {
   local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
