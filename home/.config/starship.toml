@@ -1,0 +1,30 @@
+format = "$all$custom$character"
+[time]
+format = "[$time]($style) "
+disabled = false
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[directory]
+style = "bold blue"
+
+[git_branch]
+format = "[$branch(:$remote_branch)]($style) "
+style = "bold bright-purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+up_to_date = "✔"
+modified = "✗"
+deleted = ""
+style = "bold green"
+
+[terraform]
+disabled = true
+
+[custom.gwip]
+when = 'git log -n 5 | grep -q -c "\-\-wip\-\-"'
+command = 'echo "(wip)"'
+style = "bold red"
