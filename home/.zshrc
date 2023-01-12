@@ -27,6 +27,7 @@ antigen bundle ansible
 antigen bundle paulirish/git-open
 antigen bundle z
 antigen bundle "MichaelAquilina/zsh-you-should-use"
+antigen bundle docker
 
 antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
 
@@ -42,3 +43,6 @@ LOCALZSHRC=~/.zshrc-$(scutil --get LocalHostName)
 if test -f "$LOCALZSHRC"; then
 	source "$LOCALZSHRC"
 fi
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
+
