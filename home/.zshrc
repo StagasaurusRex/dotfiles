@@ -29,7 +29,7 @@ antigen bundle z
 antigen bundle "MichaelAquilina/zsh-you-should-use"
 antigen bundle docker
 
-antigen theme shashankmehta/dotfiles thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
+eval "$(starship init zsh)"
 
 antigen apply
 
