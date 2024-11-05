@@ -1,119 +1,238 @@
 tap "1password/tap"
 tap "atlasportfolio/tap", "git@bitbucket.org:atlasportfolio/homebrew-tap.git"
-tap "charmbracelet/tap"
+tap "dart-lang/dart"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
-brew "python@3.10"
+tap "netdcy/flowvision"
+tap "peterldowns/tap"
+tap "playcover/playcover"
+tap "promptops/promptops"
+tap "sass/sass"
+tap "thecasualcoder/stable"
 brew "ansible"
 brew "antigen"
-brew "ruby"
+brew "little-cms2"
+brew "webp"
+brew "jpeg-xl"
+brew "aom"
+brew "awscli"
+brew "awslogs"
+brew "bat"
+brew "boost"
+brew "glib"
+brew "cmake"
 brew "cocoapods"
+brew "curl"
+brew "gd"
+brew "libpq"
+brew "php"
 brew "composer"
 brew "coreutils"
 brew "cowsay"
+brew "diff-so-fancy"
+brew "difftastic"
 brew "docker", link: false
 brew "dockutil"
+brew "docutils"
 brew "folly"
 brew "fizz"
+brew "mvfst"
 brew "wangle"
 brew "fbthrift"
 brew "fb303"
+brew "edencommon"
+brew "eza"
+brew "unbound"
+brew "gnutls"
+brew "harfbuzz"
+brew "openjpeg"
+brew "leptonica"
+brew "libarchive"
+brew "libmicrohttpd"
+brew "tesseract"
+brew "ffmpeg"
 brew "fish"
 brew "fortune"
 brew "git"
 brew "git-quick-stats"
-brew "glib", link: false
 brew "glow"
+brew "gnupg"
+brew "go"
+brew "goaccess"
+brew "gron"
+brew "gum"
+brew "handbrake", link: false
 brew "homesick-completion"
+brew "hugo"
+brew "iperf"
+brew "jq"
 brew "less"
+brew "libfido2"
+brew "qemu"
+brew "lima"
 brew "lua"
 brew "luv"
 brew "mas"
 brew "mysql-client"
 brew "neovim"
+brew "nmap"
 brew "node"
+brew "nvm"
+brew "openjdk"
+brew "openvpn"
+brew "packer"
+brew "pipx"
+brew "protobuf"
+brew "python-setuptools"
+brew "python@3.10"
 brew "ruby-build"
 brew "rbenv"
+brew "ripgrep"
+brew "rust"
 brew "shellcheck"
-brew "terraform"
+brew "starship"
+brew "swiftlint"
+brew "terraform-docs"
+brew "terragrunt"
 brew "tmux"
+brew "transmission-cli"
 brew "trash"
 brew "watchman"
 brew "wget"
+brew "xcodes", link: false
+brew "yarn"
 brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
-brew "charmbracelet/tap/gum"
+brew "atlasportfolio/tap/authorize-my-ip"
+brew "atlasportfolio/tap/rds-refresh"
+brew "hashicorp/tap/terraform"
+brew "peterldowns/tap/localias"
+brew "sass/sass/sass"
+brew "thecasualcoder/stable/csvdiff"
 cask "1password-cli"
-cask "aerial"
+cask "airbuddy"
 cask "alfred"
+cask "almighty"
+cask "altserver"
+cask "amazon-chime"
 cask "appcleaner"
 cask "aws-vault"
-cask "bartender"
-cask "boom-3d"
 cask "brave-browser"
-cask "cheatsheet"
+cask "carbon-copy-cloner"
+cask "cleanshot"
+cask "cursor"
 cask "devonthink"
+cask "diffusionbee"
 cask "discord"
 cask "disk-inventory-x"
 cask "docker"
+cask "draw-things"
+cask "dropbox"
 cask "fantastical"
+cask "firefox"
+cask "flowvision"
+cask "font-fira-code-nerd-font"
+cask "font-hack-nerd-font"
 cask "font-inconsolata-nerd-font"
+cask "font-intel-one-mono"
 cask "font-meslo-lg-nerd-font"
 cask "font-office-code-pro"
 cask "gitup"
 cask "google-chrome"
 cask "hammerspoon"
+cask "handbrake"
+cask "hazel"
+cask "iina"
 cask "imageoptim"
+cask "imazing"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "lastpass"
+cask "little-snitch"
+cask "logseq"
+cask "maccy"
 cask "macfuse"
-cask "maestral"
+cask "macwhisper"
+cask "microsoft-edge"
 cask "mimestream"
+cask "msty"
+cask "notion"
 cask "obsidian"
+cask "ollamac"
+cask "openvpn-connect"
+cask "orbstack"
+cask "orion"
 cask "plex"
 cask "postman"
 cask "proxyman"
 cask "quitter"
 cask "qview"
+cask "raycast"
 cask "runjs"
+cask "sequel-ace"
 cask "sf-symbols"
 cask "slack"
 cask "spotify"
+cask "stats"
 cask "steam"
+cask "swiftbar"
+cask "tailscale"
 cask "the-unarchiver"
+cask "transmission"
 cask "transmit"
+cask "upscayl"
+cask "utm"
 cask "veracrypt"
 cask "visual-studio-code"
 cask "vlc"
 cask "wwdc"
+cask "xcodes"
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Affinity Designer", id: 824171161
-mas "Affinity Photo", id: 824183456
-mas "Affinity Publisher", id: 881418622
+mas "Airmail", id: 918858936
 mas "Amphetamine", id: 937984704
+mas "Apple Configurator", id: 1037126344
+mas "Asset Catalog Creator", id: 866571115
+mas "Authenticator", id: 1538761576
+mas "Bakery", id: 1575220747
 mas "Boop", id: 1518425043
+mas "CARROT Weather", id: 993487541
 mas "ColorSlurp", id: 1287239339
 mas "Deliveries", id: 290986013
+mas "DevCleaner", id: 1388020431
 mas "Developer", id: 640199958
-mas "Donate and Smile", id: 1446974193
+mas "Discovery", id: 1381004916
 mas "Downlink", id: 1454269192
 mas "Drafts", id: 1435957248
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
+mas "Flighty", id: 1358823008
+mas "Flow", id: 1423210932
+mas "Foodnoms", id: 1479461686
+mas "Hand Mirror", id: 1502839586
+mas "Image2icon", id: 992115977
 mas "Keynote", id: 409183694
+mas "MeetingBar", id: 1532419400
 mas "Mela", id: 1568924476
 mas "Numbers", id: 409203825
-mas "OmniFocus", id: 1346203938
+mas "OmniFocus", id: 1542143627
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Parcel", id: 639968404
 mas "Pastebot", id: 1179623856
+mas "Photo Vault", id: 1562839653
 mas "PiPifier", id: 1160374471
 mas "Pixea", id: 1507782672
+mas "Spark Desktop", id: 6445813049
+mas "TapTab", id: 1659363738
+mas "TestFlight", id: 899247664
+mas "Timery", id: 1425368544
 mas "Toolkit for YNAB", id: 1592912837
+mas "Tripsy", id: 1429967544
+mas "URL Blocker", id: 1542321296
 mas "Xcode", id: 497799835
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "vscodevim.vim"
