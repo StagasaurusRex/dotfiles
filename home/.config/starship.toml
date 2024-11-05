@@ -11,7 +11,7 @@ error_symbol = "[➜](bold red)"
 style = "bold blue"
 
 [git_branch]
-format = "[$branch(:$remote_branch)]($style) "
+format = "[($branch(:$remote_branch))]($style) "
 style = "bold bright-purple"
 
 [git_status]
@@ -25,6 +25,11 @@ style = "bold green"
 disabled = true
 
 [custom.gwip]
-when = 'git log -n 5 | grep -q -c "\-\-wip\-\-"'
+when = 'git log -n 5 | grep -q -c -- --wip--'
 command = 'echo "(wip)"'
 style = "bold red"
+
+[custom.todoPr]
+#when = 'git log -p master^..HEAD | grep -q -c "^\+.*todo-pr"'
+#command = 'echo "(todo-pr)"'
+#style = "bold red"

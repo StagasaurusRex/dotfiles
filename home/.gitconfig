@@ -1,7 +1,8 @@
 [user]
 	name = William Staggs
-	email = William@staggs.io
+	useConfigOnly = true
         signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDeKlkX5/oA5pH88MDZEWSH4tyEUYytnr+F03BLGX49Q
+	email = william@staggs.io
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -12,6 +13,7 @@
 [push]
 	default = current
 	followTags = true
+	autoSetupRemote = true
 [core]
 	excludesfile = /Users/staggs/.gitignore
 [hooks "confirm"]

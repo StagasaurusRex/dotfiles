@@ -29,9 +29,10 @@ antigen bundle z
 antigen bundle "MichaelAquilina/zsh-you-should-use"
 antigen bundle docker
 
+antigen apply
+
 eval "$(starship init zsh)"
 
-antigen apply
 
 source ~/.zsh_aliases
 eval "$(op completion zsh)"; compdef _op op
@@ -46,4 +47,28 @@ fi
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
-[ -d /Volumes/Symplany/atlas-app/ops/docker/dev/bin ] && PATH="/Volumes/Symplany/atlas-app/ops/docker/dev/bin:$PATH" #Symplany Managed
+function printc () {
+  CMD=$(cut -d " " -f1 <<< $1)
+ case $CMD in
+   aws-vault)
+     print "We in da vault"
+     ;;
+   *)
+     print "We not in da vault :("
+     ;;
+ esac
+}
+plugins=(rails git ruby)
+
+# add-zsh-hook preexec printc
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+[ -f /Volumes/Symplany/atlas-app/.symplanyrc-shared ] && source /Volumes/Symplany/atlas-app/.symplanyrc-shared #Symplany Managed
+
+export PATH=$PATH:/Volumes/Symplany/scripts
+
+# Created by `pipx` on 2024-05-16 18:29:59
+export PATH="$PATH:/Users/staggs/.local/bin"

@@ -269,3 +269,4 @@ set -g status-position top
 bind-key -n C-] next-window
 bind-key ] next-window
 bind-key [ previous-window
+bind-key C-x setw synchronize-panes

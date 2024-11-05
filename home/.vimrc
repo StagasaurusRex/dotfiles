@@ -5,6 +5,7 @@ set splitright
 set wildmode=longest,list,full
 set wildmenu
 set autochdir
+set mouse=v
 
 syntax on
 
