@@ -346,7 +346,6 @@ function audioDeviceCallback(event)
 
         local microphone = hs.audiodevice.findDeviceByName(MICROPHONE_DEVICE_NAME)
 
-
         local devices = hs.audiodevice.allDevices()
 
         for _, device in ipairs(devices) do
@@ -373,3 +372,107 @@ hs.audiodevice.watcher.start()
 hs.alert.show("Config loaded")
 
 -- https://news.ycombinator.com/item?id=38473942 
+
+-- Key codes for media keys
+local mediaKeys = {
+    PLAY = "PLAY",
+    NEXT = "NEXT",
+    PREVIOUS = "PREVIOUS",
+}
+
+local MUSIC_APP   = "Music"
+local SPOTIFY_APP = "Spotify"
+local DEFAULT_APP = MUSIC_APP
+
+local lastControlled = nil
+
+local function isPlaying(appName)
+  if appName == SPOTIFY_APP then
+    return hs.spotify.isPlaying()
+  else
+    return hs.itunes.isPlaying()
+  end
+end
+
+local function frontmostName()
+  local app = hs.application.frontmostApplication()
+  return app and app:name() or nil
+end
+
+local function moduleFor(appName)
+  return (appName == SPOTIFY_APP) and hs.spotify or hs.itunes
+end
+
+
+local function choosePlayerName()
+  local spotifyPlaying = hs.spotify.isPlaying()
+  local musicPlaying   = hs.itunes.isPlaying()
+
+  -- 1️⃣ Currently playing (only if exactly one)
+  if spotifyPlaying and not musicPlaying then
+    log.w("spotify playing")
+    return SPOTIFY_APP
+  end
+
+  if musicPlaying and not spotifyPlaying then
+    log.w("music playing")
+    return MUSIC_APP
+  end
+
+  -- 2️⃣ Frontmost
+  local front = frontmostName()
+  log.w("frontmost")
+  log.w(front)
+  if front == SPOTIFY_APP or front == MUSIC_APP then
+    return front
+  end
+
+  -- 3️⃣ Last controlled
+  if lastControlled then
+    log.w(lastControlled)
+    return lastControlled
+  end
+
+  -- 4️⃣ Default
+  return DEFAULT_APP
+end
+
+local function getMusicModule()
+  local appName = choosePlayerName()
+  lastControlled = appName
+  return moduleFor(appName)
+end
+
+
+local mediaTap = hs.eventtap.new({hs.eventtap.event.types.systemDefined}, function(e)
+    if e:systemKey() then
+        log.w('got system key')
+        local data = e:systemKey()
+        log.w(data)
+        
+        -- Only act on keyDown (not keyUp)
+        if data.down then
+            log.w('got data.down')
+            log.w(data.key)
+            log.w(type(data.key))
+            if data.key == mediaKeys.PLAY then
+                -- log.w("Play/Pause pressed!")
+                getMusicModule().playpause()
+                -- Returning true blocks the default behavior
+                return true
+            elseif data.key == mediaKeys.NEXT then
+                log.w("Next pressed!")
+                getMusicModule().next()
+                return true
+            elseif data.key == mediaKeys.PREVIOUS then
+                log.w("Previous pressed!")
+                getMusicModule().previous()
+                return true
+            end
+        end
+    end
+
+    return false
+end)
+
+mediaTap:start()
