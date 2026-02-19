@@ -16,12 +16,6 @@
 	autoSetupRemote = true
 [core]
 	excludesfile = /Users/staggs/.gitignore
-[hooks "confirm"]
-	match = FIXME
-	match = TODO
-[hooks]
-	confirm = todo
-	confirm = fixme
 [fetch]
 	prune = true
 [pull]
