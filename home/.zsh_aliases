@@ -24,6 +24,7 @@ alias vi=nvim
 alias vim=nvim
 
 alias cat="bat"
+alias ofd="open ."
 
 groot() {
   cd $(git rev-parse --show-toplevel)
@@ -45,15 +46,9 @@ brew() {
   done
 }
 
-aws-vault() {
-  security unlock-keychain -p $(op read -n 'op://Personal/AWS Vault/password' --account DQPHORCFIFDX7HZ3LFVEK7QZYQ) "$HOME/Library/Keychains/aws-vault.keychain-db"
-  /opt/homebrew/bin/aws-vault ${@}
+phpstorm() {
+	~/bin/phpstorm $(git rev-parse --show-toplevel)
 }
 
-approveDeploy() {
-	aws-vault exec atlasStaging -- aws codepipeline put-approval-result --pipeline-name staging-build-app-deploy-to-staging --stage-name Approve --action-name Approve --token $(aws-vault exec atlasStaging -- aws codepipeline get-pipeline-state --name staging-build-app-deploy-to-staging | jq -r '.stageStates[] | select(.stageName == "Approve") | .actionStates[].latestExecution.token') --result status=Approved,summary=
-}
 
-deployStatus() {
-	aws-vault exec atlasStaging -- aws codepipeline get-pipeline-state --name staging-build-app-deploy-to-staging | jq -r '.stageStates[].actionStates[] | select(.latestExecution.status == "InProgress") | .actionName'
-}
+alias docker-bash='CONTAINER_ID=$(docker ps | tail -n +2 | gum choose | awk '\''{print $1}'\''); docker exec -it "$CONTAINER_ID" /bin/bash'
